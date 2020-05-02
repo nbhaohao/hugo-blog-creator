@@ -1,0 +1,24 @@
+---
+title: "Hugo 搭建个人博客"
+date: 2020-05-02T10:01:22+08:00
+draft: true
+---
+
+## 安装 Hugo
+Hugo 的官网文档非常好，只需要跟着 [文档](https://gohugo.io/getting-started/quick-start/) 的步骤，就可以在本地启动一个 Hugo 服务，看到自己站点的效果了。
+
+## 使用 github 解析 HTML
+假如我们已经使用 Hugo 生成了一个 `public` 文件夹，那么我们可以把这个文件夹上传到 github 上，使用 **Github Page** 这项服务来让其他人可以访问到我们的博客。
+
+我们需要新建一个 `<你的用户名>.github.io` 仓库，然后在 `Settings` 中打开关于 GithubPages 的配置。
+
+![githubSettings截图](/images/1-hugo-tutorial/github.jpg)
+
+我这里配置了域名，你应该可以看到 `<你的用户名>.github.io` 的地址，是可以访问了，比如我的是 `nbhaohao.github.io`
+
+## 域名配置
+如果你有自己的域名，那么可以使用域名访问你的博客，域名需要配置 DNS 解析，可参考 [Github文档](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)
+
+配置完成后，应该和这个截图一样，有 4 条 A 记录。
+
+![阿里云截图](/images/1-hugo-tutorial/aliyun.png)
